@@ -6,7 +6,23 @@
   height: 40vmin;
   pointer-events: none;
 }
-
+.text-color{
+  color: #F9A392;
+}
+.bg-color{
+  background-color: #FFF8F5;
+}
+.button-primary{
+  padding: 15px 30px;
+}
+.button-primary:hover{
+  color: white;
+  background-color: #F63E7B;
+  text-align: center;
+  font-size: 16px;
+  opacity: 0.6;
+  transition: 0.3s;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
