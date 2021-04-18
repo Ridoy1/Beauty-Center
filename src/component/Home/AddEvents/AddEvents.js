@@ -26,7 +26,7 @@ const AddEvents = () => {
             imageURL: imageURL
 
         };
-        const url = `http://localhost:5000/addEvent`;
+        const url = `https://stark-woodland-81526.herokuapp.com/addEvent`;
         
         fetch(url, {
             method: 'POST',

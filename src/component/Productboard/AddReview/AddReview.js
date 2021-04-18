@@ -27,7 +27,7 @@ const AddReview = () => {
             imageURL: imageURL
 
         };
-        const url = `http://localhost:5000/review`;
+        const url = `https://stark-woodland-81526.herokuapp.com/review`;
         
         fetch(url, {
             method: 'POST',
