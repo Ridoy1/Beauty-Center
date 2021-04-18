@@ -10,7 +10,6 @@ import Login from './component/Login/Login/Login';
 import AddEvents from './component/Home/AddEvents/AddEvents';
 import { createContext, useState } from 'react';
 import PrivateRoute from './component/Login/PrivateRoute/PrivateRoute';
-import AddReview from './component/Productboard/AddReview/AddReview';
 import ProductDoard from './component/Productboard/ProductDoard/ProductDoard';
 
 export const UserContext = createContext();
