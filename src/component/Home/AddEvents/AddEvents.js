@@ -5,7 +5,7 @@ import { useForm } from "react-hook-form";
 
 const AddEvents = () => {
     const textarea = {
-        width: "100%",
+        width: "50%",
         height: "100px",
         padding: "5px 10px",
         boxSizing: "border-box",
@@ -54,17 +54,25 @@ const AddEvents = () => {
     }
 
     return (
-        <form onSubmit={handleSubmit(onSubmit)}>
-            <h2>Add Service</h2>
-            <input type="text" name="name" {...register("name")} placeholder="Service title" />
-            <br/>
-            <input type="text" style={textarea} name="description" {...register("description")} placeholder="Service description" />
-            <br/>
-            <h4>Image</h4>
-            <input type="file" onChange={handleImageUpload} />
-            <br/>
-            <input type="submit" />
-        </form>
+        <div className="p-5 bg-color">
+            <form onSubmit={handleSubmit(onSubmit)}>
+                <h2>Add Service</h2>
+                <br/>
+                <br/>
+                <input type="text" name="name" {...register("name")} placeholder="Service title" />
+                <br/>
+                <br/>
+                <input type="text" style={textarea} name="description" {...register("description")} placeholder="Service description" />
+                <br/>
+                <br/>
+                <h4>Image</h4>
+                <input type="file" onChange={handleImageUpload} />
+                <br/>
+                <br/>
+                <input type="submit" />
+            </form>
+        </div>
+        
     );
 };
 

@@ -11,6 +11,8 @@ import AddEvents from './component/Home/AddEvents/AddEvents';
 import { createContext, useState } from 'react';
 import PrivateRoute from './component/Login/PrivateRoute/PrivateRoute';
 import ProductDoard from './component/Productboard/ProductDoard/ProductDoard';
+import AddReview from './component/Productboard/AddReview/AddReview';
+import Booking from './component/Booking/Booking/Booking';
 
 export const UserContext = createContext();
 
@@ -29,9 +31,15 @@ function App() {
           <PrivateRoute path="/addEvents">
             <AddEvents/>
           </PrivateRoute>
-          <Route path="/product">
+          <PrivateRoute path="/product">
             <ProductDoard/>
+          </PrivateRoute>
+          <Route path="/addReview">
+            <AddReview/>
           </Route>
+          <PrivateRoute path="/booking">
+            <Booking/>
+          </PrivateRoute>
         </Switch>
       </Router>
     </UserContext.Provider>
