@@ -1,9 +1,8 @@
 Live link : https://service-d4042.web.app/
 
 
+Beauty Center
 
 
-
-amin add service and Testimonials dynamic  dabe korchi 
 
 
